@@ -8,7 +8,11 @@
     "start": "parcel",
     "build": "parcel build"
   },
-  "keywords": ["restaurante", "palentino", "web"],
+  "keywords": [
+    "restaurante",
+    "palentino",
+    "web"
+  ],
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
