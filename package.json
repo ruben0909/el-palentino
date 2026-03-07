@@ -1,0 +1,17 @@
+{
+  "name": "restaurante-el-palentino",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Es la web del restaurante el palentino.",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": ["restaurante", "palentino", "web"],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.14.0"
+  }
+}
