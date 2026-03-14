@@ -1,8 +1,43 @@
-<aside>
-    <nav>
+<video class="bg-video" autoplay loop muted playsinline aria-hidden="true">
+  <source src="./assets/bg.mp4" type="video/mp4" />
+</video>
+<div class="bg-overlay" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+<p class="dev-banner" id="dev-banner" style="display: none;" role="status">Aviso: estas en entorno de desarrollo, no en producción.</p>
+
+<div>
+<header class="site-header">
+    <div class="brand-bar">
+        <a class="brand" href="/" aria-label="Ir a la portada de El Palentino">
+            <img
+                class="brand-logo"
+                src="./assets/logo-palentino.svg"
+                alt="Logotipo de El Palentino"
+                width="210"
+                height="60"
+            >
+            <span class="brand-text sr-only">El Palentino</span>
+        </a>
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Abrir o cerrar menu"
+        >
+            <span aria-hidden="true">Menu</span>
+        </button>
+    </div>
+
+    <nav id="primary-nav" class="site-nav" aria-label="Navegacion principal">
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="/">Portada</a></li>
+            <li><a href="/categoria">Categoria</a></li>
+            <li><a href="/det1">Detalle Menestra</a></li>
+            <li><a href="/det2">Detalle Lechazo</a></li>
+            <li><a href="/links">Fuentes y atribuciones</a></li>
         </ul>
-</aside>
+    </nav>
+</header>
