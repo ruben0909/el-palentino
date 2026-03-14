@@ -1,5 +1,5 @@
 .parcel-cache/
 dist/
 node_modules/
-src/.env
-src/.env.local
+.env
+.env.local
