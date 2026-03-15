@@ -112,7 +112,53 @@ button:focus-visible {
   background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
+
+.site-header,
+.site-footer,
+main {
+  width: 100%;
+  max-width: 1120px;
+  padding-inline: var(--space-4);
+  margin-inline: auto;
+}
+
+.site-header {
+  margin-top: var(--space-4);
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.brand-bar {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3);
+  border-bottom: 2px solid rgb(255 255 255 / 26%);
+}
+
+.brand {
+  color: var(--ink);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.brand-logo {
+  width: min(52vw, 210px);
+  height: auto;
+}
+
+.brand-text,
+h1,
+h2,
+h3 {
+  font-family: "Outfit", sans-serif;
+  letter-spacing: -0.02em;
+}
   align-items: center;
   justify-content: center;
   height: 100%;
