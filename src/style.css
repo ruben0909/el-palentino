@@ -1,6 +1,117 @@
-html {
-  color-scheme: light dark;
-  font-family: system-ui;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
+:root {
+  /* Base Colors - Modernidad */
+  --bg: #1a1a1a; /* Gris muy oscuro, no negro puro */
+  --bg-transparent: rgb(26 26 26 / 85%);
+  --text-main: #fcf9f2; /* Blanco roto / crema muy suave para lectura */
+  --text-muted: #e0dcd3;
+  
+  /* Accent Colors - Tradición */
+  --accent-olive: #556b2f; /* Verde oliva */
+  --accent-terracotta: #cca483; /* Terracota / barro suave para textos o detalles */
+  --accent-wine: #722f37; /* Rojo burdeos / vino */
+  --accent-ochre: #c99a2e; /* Ocre / mostaza oscura */
+  
+  --focus: #c99a2e;
+  
+  /* Spacing */
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  
+  /* UI Shapes */
+  --radius: 4px; /* Slightly rounded, almost straight */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-main);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+}
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--accent-terracotta);
+}
+
+a:hover {
+  color: var(--text-main);
+  text-decoration-color: var(--accent-terracotta);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--space-3);
+  top: -4rem;
+  z-index: 1000;
+  background: var(--bg);
+  color: var(--text-main);
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--accent-ochre);
+}
+
+.skip-link:focus {
+  top: var(--space-3);
+}
+
+.dev-banner {
+  margin: 0;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  font-weight: 700;
+  color: #2a1800;
+  background: #ffcf57;
+  border-bottom: 2px solid #8c6a00;
+}
+
+.site-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
   display: flex;
   align-items: center;
   justify-content: center;
