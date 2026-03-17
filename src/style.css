@@ -159,6 +159,78 @@ h3 {
   font-family: "Outfit", sans-serif;
   letter-spacing: -0.02em;
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.menu-toggle {
+  border: 1px solid var(--accent-terracotta);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--text-main);
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+.menu-toggle:hover {
+  background: var(--accent-olive);
+  border-color: var(--accent-olive);
+}
+
+.site-nav {
+  border-top: 0;
+  display: none;
+}
+
+.site-nav.is-open {
+  display: block;
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav a {
+  display: block;
+  padding: 1rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--text-muted);
+  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.site-nav a:hover {
+  background: transparent;
+  color: var(--text-main);
+  padding-left: 1.5rem;
+}
+
+.site-nav a[aria-current="page"] {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--accent-terracotta);
+  background: transparent;
+  border-left: 3px solid var(--accent-terracotta);
+  padding-left: 1.5rem;
+}
   align-items: center;
   justify-content: center;
   height: 100%;
