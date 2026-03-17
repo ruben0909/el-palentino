@@ -231,7 +231,112 @@ h3 {
   border-left: 3px solid var(--accent-terracotta);
   padding-left: 1.5rem;
 }
+
+main {
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-4);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: var(--space-4);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+  line-height: 1.1;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--text-main);
+  text-wrap: balance;
+  font-weight: 500;
+}
+
+h2 {
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-3);
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: var(--space-1);
+  font-size: 1.25rem;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--space-3);
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.eyebrow {
+  color: var(--accent-terracotta);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  font-family: inherit;
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+.hero-logo {
+  width: min(100%, 350px);
+  height: auto;
+  margin-bottom: var(--space-3);
+  filter: brightness(0) invert(1); /* white logo */
+  opacity: 0.9;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.button-primary,
+.button-secondary {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: var(--radius);
+  padding: 0.85rem 1.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.button-primary {
+  background: var(--accent-olive);
+  color: var(--text-main);
+  border: 1px solid var(--accent-olive);
+}
+
+.button-primary:hover {
+  background: transparent;
+  color: var(--accent-olive);
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--text-muted);
+}
+
+.button-secondary:hover {
+  border-color: var(--text-main);
+  background: rgba(255, 255, 255, 0.05);
+}
+
   height: 100%;
 }
