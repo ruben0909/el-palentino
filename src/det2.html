@@ -1,15 +1,91 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parcel Vanilla App</title>
+    <title>El Palentino | Detalle Lechazo Churro</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    
+    <div  class="site-wrapper">
     <include src="./views/header.html"></include>
-    <main>
+    <main id="main-content" tabindex="-1" class="detail-main">
+      <article aria-labelledby="detail-title">
+        <h1 id="detail-title">Lechazo churro asado</h1>
+
+        <img
+          class="featured-image"
+          src="./assets/platos/Plato_de_lechazo.jpg"
+          alt="Fuente de lechazo churro asado con piel dorada"
+          width="960"
+          height="640"
+        >
+
+        <p>
+          El lechazo churro asado es uno de los grandes referentes de Palencia.
+          Se cocina lentamente en horno para lograr una carne jugosa y una capa
+          exterior dorada con textura crujiente.
+        </p>
+        <p>
+          En su version tradicional se trabaja con pocos ingredientes: lechazo,
+          agua, sal y tiempo de asado. Esa sencillez permite que el sabor del
+          producto local sea el protagonista absoluto del plato.
+        </p>
+        <p>
+          En El Palentino lo servimos con ensalada verde y pan candeal. Para
+          maridar, recomendamos vinos de Castilla y Leon con buena frescura y
+          estructura media para equilibrar la grasa del asado.
+        </p>
+
+        <section aria-labelledby="gallery-title">
+          <h2 id="gallery-title">Galeria del plato</h2>
+          <ul class="gallery-grid">
+            <li>
+              <img
+                src="./assets/platos/LechazoAntesDespues.jpg"
+                alt="Cuartos de lechazo asado, junto a dos cuartos sin asar."
+                width="640"
+                height="427"
+                loading="lazy"
+              >
+            </li>
+            <li>
+              <img
+                src="./assets/platos/Plato_de_lechazo.jpg"
+                alt="Lechazo asado recien salido del horno de lena"
+                width="640"
+                height="427"
+                loading="lazy"
+              >
+            </li>
+            <li>
+              <img
+                src="./assets/platos/LechazoPapatas.jpg"
+                alt="Racion de lechazo servida en plato con guarnicion"
+                width="640"
+                height="427"
+                loading="lazy"
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="video-title">
+          <h2 id="video-title">Video recomendado</h2>
+          <div class="video-wrap">
+            
+            <iframe width="560"
+             height="315" 
+             src="https://www.youtube.com/embed/MAJhGaNT5vY?si=xqOfsJqqU-IZcDu-" 
+             title="Video de YouTube sobre tecnica de lechazo asado"
+             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </section>
+      </article>
     </main>
     <include src="./views/footer.html"></include>
+    </div>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
