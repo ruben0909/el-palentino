@@ -604,7 +604,7 @@ p {
   /* Clear the mobile labels on desktop */
   .table-row .table-cell::before {
     display: none;
-    content: "";
+
   }
 
   .table-row:hover .table-cell {
