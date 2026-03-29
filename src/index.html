@@ -1,48 +1,63 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Palentino | Portada</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div  class="site-wrapper">
-    <include src="./views/header.html"></include>
-    <main id="main-content" tabindex="-1">
-      <section class="hero" aria-labelledby="hero-title">
-        <h1 id="hero-title">Bienvenido a El Palentino</h1>
-        <p class="eyebrow">Cocina tradicional con mirada actual</p>
-        <p>
-          Somos un restaurante tradicional con un toque moderno, centrado en cocina palentina y
-          producto de cercania. En esta web puedes explorar una categoria de
-          platos, consultar dos fichas de detalle y revisar las fuentes.
-        </p>
-        <p class="cta-row">
-          <a class="button-primary" href="/categoria">Ver categoria de platos</a>
-          <a class="button-secondary" href="/links">Consultar fuentes</a>
-        </p>
-      </section>
+    <div class="site-wrapper">
+      <include src="./views/header.html"></include>
+      <main id="main-content" tabindex="-1">
+        <section class="hero" aria-labelledby="hero-title">
+          <h1 id="hero-title">Bienvenido a El Palentino</h1>
+          <p class="eyebrow">Cocina tradicional con mirada actual</p>
+          <p>
+            Somos un restaurante tradicional con un toque moderno, centrado en
+            cocina palentina y producto de cercania. En esta web puedes explorar
+            una categoria de platos, consultar dos fichas de detalle y revisar
+            las fuentes.
+          </p>
+          <p class="cta-row">
+            <a class="button-primary" href="/categoria"
+              >Ver categoria de platos</a
+            >
+            <a class="button-secondary" href="/links">Consultar fuentes</a>
+          </p>
+        </section>
 
-      <section class="quick-links" aria-labelledby="quick-links-title">
-        <h2 id="quick-links-title">Accesos directos</h2>
-        <ul class="card-grid">
-          <li class="card-item">
-            <h3><a href="/categoria">Categoria</a></h3>
-            <p>Listado de platos con imagen destacada y acceso a detalles.</p>
-          </li>
-          <li class="card-item">
-            <h3><a href="/det1">Detalle 1: Menestra palentina</a></h3>
-            <p>Origen local, elaboracion tradicional y video de referencia.</p>
-          </li>
-          <li class="card-item">
-            <h3><a href="/det2">Detalle 2: Lechazo churro</a></h3>
-            <p>Asado clasico de Castilla y Leon con acompanamientos tipicos.</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <include src="./views/footer.html"></include>
+        <section class="quick-links" aria-labelledby="quick-links-title">
+          <h2 id="quick-links-title">Accesos directos</h2>
+          <ul class="card-grid">
+            <li class="card-item">
+              <a href="/categoria">
+                <h3>Categoria</h3>
+                <p>
+                  Listado de platos con imagen destacada y acceso a detalles.
+                </p>
+              </a>
+            </li>
+            <li class="card-item">
+              <a href="/det1">
+                <h3>Detalle 1: Menestra palentina</h3>
+                <p>
+                  Origen local, elaboracion tradicional y video de referencia.
+                </p>
+              </a>
+            </li>
+            <li class="card-item">
+              <a href="/det2">
+                <h3>Detalle 2: Lechazo churro</h3>
+                <p>
+                  Asado clasico de Castilla y Leon con acompanamientos tipicos.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <include src="./views/footer.html"></include>
     </div>
     <script type="module" src="./index.js"></script>
   </body>

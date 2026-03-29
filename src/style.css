@@ -364,16 +364,16 @@ p {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
-.card-item h3 a,
-.dish-card h2 a {
+.card-item a,
+.dish-card a {
   color: var(--text-main);
   text-decoration: none;
   font-family: inherit; /* will use Outfit inherited from h2/h3 */
   font-weight: 600;
 }
 
-.card-item h3 a:hover,
-.dish-card h2 a:hover {
+.card-item a:hover,
+.dish-card a:hover {
   text-decoration: underline;
   text-decoration-color: var(--accent-terracotta);
   text-underline-offset: 4px;
