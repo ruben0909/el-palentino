@@ -221,6 +221,7 @@ h3 {
   background: transparent;
   color: var(--text-main);
   padding-left: 1.5rem;
+  border-left: 3px solid var(--text-main);
 }
 
 .site-nav a[aria-current="page"] {
@@ -486,6 +487,8 @@ p {
     background: transparent;
     padding-left: 0;
     border-left: 0;
+    border-bottom: 2px solid var(--text-main);
+    ;
   }
   
   .site-nav a[aria-current="page"] {
