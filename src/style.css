@@ -1,30 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+@import url("npm:animate.css/animate.min.css");
+@import url("npm:@fortawesome/fontawesome-free/css/all.min.css");
 
 :root {
-  /* Base Colors - Modernidad */
-  --bg: #1a1a1a; /* Gris muy oscuro, no negro puro */
+  --bg: #1a1a1a; 
   --bg-transparent: rgb(26 26 26 / 85%);
-  --text-main: #fcf9f2; /* Blanco roto / crema muy suave para lectura */
+  --text-main: #fcf9f2; 
   --text-muted: #e0dcd3;
   
-  /* Accent Colors - Tradición */
-  --accent-olive: #556b2f; /* Verde oliva */
-  --accent-terracotta: #cca483; /* Terracota / barro suave para textos o detalles */
-  --accent-wine: #722f37; /* Rojo burdeos / vino */
-  --accent-ochre: #c99a2e; /* Ocre / mostaza oscura */
+  --accent-olive: #556b2f;
+  --accent-terracotta: #cca483; 
+  --accent-wine: #722f37; 
+  --accent-ochre: #c99a2e; 
   
   --focus: #c99a2e;
   
-  /* Spacing */
   --space-1: 0.5rem;
   --space-2: 0.75rem;
   --space-3: 1rem;
   --space-4: 1.5rem;
   --space-5: 2rem;
   
-  /* UI Shapes */
-  --radius: 4px; /* Slightly rounded, almost straight */
+  --radius: 4px; 
 }
 
 * {
@@ -75,22 +72,6 @@ a:focus-visible,
 button:focus-visible {
   outline: 3px solid var(--focus);
   outline-offset: 3px;
-}
-
-.skip-link {
-  position: absolute;
-  left: var(--space-3);
-  top: -4rem;
-  z-index: 1000;
-  background: var(--bg);
-  color: var(--text-main);
-  padding: 0.7rem 1rem;
-  border-radius: var(--radius);
-  border: 1px solid var(--accent-ochre);
-}
-
-.skip-link:focus {
-  top: var(--space-3);
 }
 
 .dev-banner {
