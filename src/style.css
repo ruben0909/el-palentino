@@ -74,6 +74,27 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
+/* Salto de navegación (Accessibility) */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  background-color: var(--accent-wine);
+  color: var(--text-main);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: top 0.2s ease-in-out;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
 .dev-banner {
   margin: 0;
   padding: 0.7rem 1rem;
