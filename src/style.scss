@@ -178,6 +178,34 @@ p {
   border: 0;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  background-color: $accent-wine;
+  color: $text-main;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: $radius;
+  transition: top 0.2s ease-in-out;
+
+  &:focus {
+    top: 1rem;
+    @include focus-ring;
+  }
+}
+
+.dev-banner {
+  margin: 0;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  font-weight: 700;
+  color: #2a1800;
+  background: #ffcf57;
+  border-bottom: 2px solid #8c6a00;
+}
 // --- Layout Components ---
 .site-wrapper {
   max-width: 1200px;
@@ -206,35 +234,6 @@ p {
     padding: $space-3 0;
   }
 
-  .skip-link {
-    position: absolute;
-    top: -100%;
-    left: 1rem;
-    z-index: 9999;
-    background-color: $accent-wine;
-    color: $text-main;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: $radius;
-    transition: top 0.2s ease-in-out;
-
-    &:focus {
-      top: 1rem;
-      @include focus-ring;
-    }
-  }
-
-  .dev-banner {
-    margin: 0;
-    padding: 0.7rem 1rem;
-    text-align: center;
-    font-weight: 700;
-    color: #2a1800;
-    background: #ffcf57;
-    border-bottom: 2px solid #8c6a00;
-  }
-
   .brand-bar {
     display: flex;
     align-items: center;
@@ -253,7 +252,7 @@ p {
       display: inline-flex;
       align-items: center;
       gap: 0.65rem;
-      
+
       .brand-logo {
         width: min(52vw, 210px);
         height: auto;
@@ -317,7 +316,9 @@ p {
       text-decoration: none;
       color: $text-muted;
       border-bottom: 1px solid rgba($text-main, 0.08);
-      transition: color 0.3s ease, background 0.3s ease;
+      transition:
+        color 0.3s ease,
+        background 0.3s ease;
 
       i {
         margin-right: $space-1;
@@ -465,12 +466,14 @@ main {
   .dish-card {
     @extend %glass-effect;
     padding: $space-4;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      border-color 0.3s ease;
 
     &:hover {
       transform: translateY(-4px);
       border-color: rgba($text-main, 0.2);
-      
+
       img {
         filter: grayscale(0%) contrast(100%);
       }
