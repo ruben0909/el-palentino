@@ -510,6 +510,26 @@ main {
   }
 }
 
+/* Art direction: force a tighter 4:3 crop for featured images on small viewports
+   while keeping 16:9 on larger screens. Use a more specific selector so this
+   overrides the global .featured-image aspect-ratio when needed. */
+@media (max-width: 720px) {
+  .art-direction .featured-image--art,
+  .featured-image.featured-image--art {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  /* Tweaked focal points for the two art-direction variants */
+  .art-direction--menestra .featured-image--art {
+    object-position: 50% 35%;
+  }
+
+  .art-direction--lechazo .featured-image--art {
+    object-position: 58% 45%;
+  }
+}
+
 .detail-main article {
   display: grid;
   gap: $space-3;
