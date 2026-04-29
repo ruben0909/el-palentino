@@ -374,12 +374,10 @@ main {
     padding: $space-5;
   }
 
-  .hero-logo {
-    width: min(100%, 350px);
-    height: auto;
-    margin-bottom: $space-3;
-    filter: brightness(0) invert(1);
-    opacity: 0.9;
+  .hero-logo {display: grid;
+  place-items: center; /* Centers both horizontally and vertically */
+  
+  height: 200px;
   }
 
   .cta-row {
@@ -411,7 +409,6 @@ main {
         color: $accent-olive;
       }
     }
-
     .button-secondary {
       @extend %btn-base;
       background: transparent;
