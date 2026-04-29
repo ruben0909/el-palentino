@@ -68,8 +68,26 @@
           <ul class="gallery-grid">
             <li>
               <picture>
-                <source srcset="~/src/assets/platos/Verduras.jpg?as=avif" type="image/avif" />
-                <source srcset="~/src/assets/platos/Verduras.jpg?as=webp" type="image/webp" />
+                <source
+                  media="(max-width: 720px)"
+                  type="image/avif"
+                  srcset="~/src/assets/platos/Verduras.jpg?width=480&as=avif"
+                />
+                <source
+                  media="(max-width: 720px)"
+                  type="image/webp"
+                  srcset="~/src/assets/platos/Verduras.jpg?width=480&as=webp"
+                />
+                <source
+                  type="image/avif"
+                  srcset="~/src/assets/platos/Verduras.jpg?width=480&as=avif 480w, ~/src/assets/platos/Verduras.jpg?width=720&as=avif 720w, ~/src/assets/platos/Verduras.jpg?width=1200&as=avif 1200w"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 720px) 50vw, 92vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="~/src/assets/platos/Verduras.jpg?width=480&as=webp 480w, ~/src/assets/platos/Verduras.jpg?width=720&as=webp 720w, ~/src/assets/platos/Verduras.jpg?width=1200&as=webp 1200w"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 720px) 50vw, 92vw"
+                />
                 <img
                   src="~/src/assets/platos/Verduras.jpg"
                   alt="Verduras cortadas para menestra tradicional"
@@ -81,8 +99,26 @@
             </li>
             <li>
               <picture>
-                <source srcset="~/src/assets/platos/Sofrito.jpg?as=avif" type="image/avif" />
-                <source srcset="~/src/assets/platos/Sofrito.jpg?as=webp" type="image/webp" />
+                <source
+                  media="(max-width: 720px)"
+                  type="image/avif"
+                  srcset="~/src/assets/platos/Sofrito.jpg?width=480&as=avif"
+                />
+                <source
+                  media="(max-width: 720px)"
+                  type="image/webp"
+                  srcset="~/src/assets/platos/Sofrito.jpg?width=480&as=webp"
+                />
+                <source
+                  type="image/avif"
+                  srcset="~/src/assets/platos/Sofrito.jpg?width=480&as=avif 480w, ~/src/assets/platos/Sofrito.jpg?width=720&as=avif 720w, ~/src/assets/platos/Sofrito.jpg?width=1200&as=avif 1200w"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 720px) 50vw, 92vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="~/src/assets/platos/Sofrito.jpg?width=480&as=webp 480w, ~/src/assets/platos/Sofrito.jpg?width=720&as=webp 720w, ~/src/assets/platos/Sofrito.jpg?width=1200&as=webp 1200w"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 720px) 50vw, 92vw"
+                />
                 <img
                   src="~/src/assets/platos/Sofrito.jpg"
                   alt="Sofrito en sartén"
@@ -94,8 +130,26 @@
             </li>
             <li>
               <picture>
-                <source srcset="~/src/assets/platos/Menestra.jpg?as=avif" type="image/avif" />
-                <source srcset="~/src/assets/platos/Menestra.jpg?as=webp" type="image/webp" />
+                <source
+                  media="(max-width: 720px)"
+                  type="image/avif"
+                  srcset="~/src/assets/platos/Menestra.jpg?width=480&as=avif"
+                />
+                <source
+                  media="(max-width: 720px)"
+                  type="image/webp"
+                  srcset="~/src/assets/platos/Menestra.jpg?width=480&as=webp"
+                />
+                <source
+                  type="image/avif"
+                  srcset="~/src/assets/platos/Menestra.jpg?width=480&as=avif 480w, ~/src/assets/platos/Menestra.jpg?width=720&as=avif 720w, ~/src/assets/platos/Menestra.jpg?width=1200&as=avif 1200w"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 720px) 50vw, 92vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="~/src/assets/platos/Menestra.jpg?width=480&as=webp 480w, ~/src/assets/platos/Menestra.jpg?width=720&as=webp 720w, ~/src/assets/platos/Menestra.jpg?width=1200&as=webp 1200w"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 720px) 50vw, 92vw"
+                />
                 <img
                   src="~/src/assets/platos/Menestra.jpg"
                   alt="Cazuela de menestra servida en mesa"
