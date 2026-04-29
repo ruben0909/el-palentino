@@ -14,11 +14,31 @@
       <article aria-labelledby="detail-title">
         <h1 id="detail-title">Menestra palentina</h1>
 
-          <picture>
-            <source srcset="~/src/assets/platos/Menestra.jpg?as=avif" type="image/avif" />
-            <source srcset="~/src/assets/platos/Menestra.jpg?as=webp" type="image/webp" />
+          <picture class="art-direction art-direction--menestra">
+            <source
+              media="(max-width: 720px)"
+              type="image/avif"
+              srcset="~/src/assets/platos/Menestra.jpg?width=640&height=480&fit=cover&as=avif"
+            />
+            <source
+              media="(max-width: 720px)"
+              type="image/webp"
+              srcset="~/src/assets/platos/Menestra.jpg?width=640&height=480&fit=cover&as=webp"
+            />
+
+            <source
+              media="(min-width: 721px)"
+              type="image/avif"
+              srcset="~/src/assets/platos/Menestra.jpg?width=1200&as=avif"
+            />
+            <source
+              media="(min-width: 721px)"
+              type="image/webp"
+              srcset="~/src/assets/platos/Menestra.jpg?width=1200&as=webp"
+            />
+
             <img
-              class="featured-image"
+              class="featured-image featured-image--art"
               src="~/src/assets/platos/Menestra.jpg"
               alt="Plato de menestra palentina con verduras de temporada"
               width="960"
