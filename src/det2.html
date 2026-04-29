@@ -14,11 +14,31 @@
       <article aria-labelledby="detail-title">
         <h1 id="detail-title">Lechazo churro asado</h1>
 
-        <picture>
-          <source srcset="~/src/assets/platos/Plato_de_lechazo.jpg?as=avif" type="image/avif" />
-          <source srcset="~/src/assets/platos/Plato_de_lechazo.jpg?as=webp" type="image/webp" />
+        <picture class="art-direction art-direction--lechazo">
+          <source
+            media="(max-width: 720px)"
+            type="image/avif"
+            srcset="~/src/assets/platos/Plato_de_lechazo.jpg?width=640&height=480&fit=cover&as=avif"
+          />
+          <source
+            media="(max-width: 720px)"
+            type="image/webp"
+            srcset="~/src/assets/platos/Plato_de_lechazo.jpg?width=640&height=480&fit=cover&as=webp"
+          />
+
+          <source
+            media="(min-width: 721px)"
+            type="image/avif"
+            srcset="~/src/assets/platos/Plato_de_lechazo.jpg?width=1200&as=avif"
+          />
+          <source
+            media="(min-width: 721px)"
+            type="image/webp"
+            srcset="~/src/assets/platos/Plato_de_lechazo.jpg?width=1200&as=webp"
+          />
+
           <img
-            class="featured-image"
+            class="featured-image featured-image--art"
             src="~/src/assets/platos/Plato_de_lechazo.jpg"
             alt="Fuente de lechazo churro asado con piel dorada"
             width="960"
