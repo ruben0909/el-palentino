@@ -14,13 +14,17 @@
       <article aria-labelledby="detail-title">
         <h1 id="detail-title">Lechazo churro asado</h1>
 
-        <img
-          class="featured-image"
-          src="~/src/assets/platos/Plato_de_lechazo.jpg"
-          alt="Fuente de lechazo churro asado con piel dorada"
-          width="960"
-          height="640"
-        >
+        <picture>
+          <source srcset="~/src/assets/platos/Plato_de_lechazo.jpg?as=avif" type="image/avif" />
+          <source srcset="~/src/assets/platos/Plato_de_lechazo.jpg?as=webp" type="image/webp" />
+          <img
+            class="featured-image"
+            src="~/src/assets/platos/Plato_de_lechazo.jpg"
+            alt="Fuente de lechazo churro asado con piel dorada"
+            width="960"
+            height="640"
+          >
+        </picture>
 
         <p>
           El lechazo churro asado es uno de los grandes referentes de Palencia.
@@ -42,31 +46,43 @@
           <h2 id="gallery-title">Galería del plato</h2>
           <ul class="gallery-grid">
             <li>
-              <img
-                src="~/src/assets/platos/LechazoAntesDespues.jpg"
-                alt="Cuartos de lechazo asado, junto a dos cuartos sin asar."
-                width="640"
-                height="427"
-                loading="lazy"
-              >
+              <picture>
+                <source srcset="~/src/assets/platos/LechazoAntesDespues.jpg?as=avif" type="image/avif" />
+                <source srcset="~/src/assets/platos/LechazoAntesDespues.jpg?as=webp" type="image/webp" />
+                <img
+                  src="~/src/assets/platos/LechazoAntesDespues.jpg"
+                  alt="Cuartos de lechazo asado, junto a dos cuartos sin asar."
+                  width="640"
+                  height="427"
+                  loading="lazy"
+                >
+              </picture>
             </li>
             <li>
-              <img
-                src="~/src/assets/platos/Plato_de_lechazo.jpg"
-                alt="Lechazo asado recién salido del horno de leña"
-                width="640"
-                height="427"
-                loading="lazy"
-              >
+              <picture>
+                <source srcset="~/src/assets/platos/Plato_de_lechazo.jpg?as=avif" type="image/avif" />
+                <source srcset="~/src/assets/platos/Plato_de_lechazo.jpg?as=webp" type="image/webp" />
+                <img
+                  src="~/src/assets/platos/Plato_de_lechazo.jpg"
+                  alt="Lechazo asado recién salido del horno de leña"
+                  width="640"
+                  height="427"
+                  loading="lazy"
+                >
+              </picture>
             </li>
             <li>
-              <img
-                src="~/src/assets/platos/LechazoPatatas.jpg"
-                alt="Ración de lechazo servida en plato con guarnición"
-                width="640"
-                height="427"
-                loading="lazy"
-              >
+              <picture>
+                <source srcset="~/src/assets/platos/LechazoPatatas.jpg?as=avif" type="image/avif" />
+                <source srcset="~/src/assets/platos/LechazoPatatas.jpg?as=webp" type="image/webp" />
+                <img
+                  src="~/src/assets/platos/LechazoPatatas.jpg"
+                  alt="Ración de lechazo servida en plato con guarnición"
+                  width="640"
+                  height="427"
+                  loading="lazy"
+                >
+              </picture>
             </li>
           </ul>
         </section>
