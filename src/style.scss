@@ -469,10 +469,6 @@ main {
     @extend %glass-effect;
     padding: $space-4;
 
-    &:hover {
-      img {
-      }
-    }
 
     a {
       color: $text-main;
