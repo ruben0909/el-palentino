@@ -539,6 +539,20 @@ main {
     border: 0;
     width: 100%;
     height: 100%;
+    transform-origin: center;
+    will-change: transform, opacity;
+    animation: appear-scale 3000ms ease-out;
+  }
+}
+
+@keyframes appear-scale {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
