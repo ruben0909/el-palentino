@@ -556,6 +556,54 @@ main {
   }
 }
 
+/* SVG Home animations */
+.hero-logo svg .trigo {
+  animation: slide-from-left 600ms alternate both;
+}
+
+.hero-logo svg .cristo {
+  animation: slide-from-top 600ms alternate both;
+  animation-delay: 150ms;
+}
+
+.hero-logo svg .taza {
+  animation: slide-from-right 600ms alternate both;
+  animation-delay: 300ms;
+}
+
+@keyframes slide-from-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-from-top {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-from-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .site-footer {
   @extend %container;
   margin-bottom: $space-5;
