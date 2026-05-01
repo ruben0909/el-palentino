@@ -8,14 +8,174 @@
   </head>
   <body>
     <video class="bg-video" autoplay loop muted playsinline aria-hidden="true">
-  <source src="./assets/bg.mp4" type="video/mp4" />
-</video>
-<div class="bg-overlay" aria-hidden="true"></div>
+      <source src="./assets/bg.mp4" type="video/mp4" />
+    </video>
+    <div class="bg-overlay" aria-hidden="true"></div>
     <div class="site-wrapper">
       <include src="./views/header.html"></include>
       <main id="main-content" tabindex="-1">
+          <div class="hero-logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 800 450"
+              width="100%"
+            >
+              <rect width="100%" height="100%" />
+
+              <g transform="translate(0, -50)">
+                <line
+                  x1="280"
+                  y1="320"
+                  x2="280"
+                  y2="150"
+                  stroke="#FFFFFF"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+
+                <path
+                  d="M 280 150 Q 275 130 280 130 Q 285 130 280 150"
+                  fill="#FFFFFF"
+                />
+
+                <path
+                  d="M 278 280 Q 250 270 250 295 Q 278 295 278 280"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M 278 250 Q 250 240 250 265 Q 278 265 278 250"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M 278 220 Q 250 210 250 235 Q 278 235 278 220"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M 278 190 Q 250 180 250 205 Q 278 205 278 190"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M 278 160 Q 250 150 250 175 Q 278 175 278 160"
+                  fill="#FFFFFF"
+                />
+
+                <path
+                  d="M 282 270 Q 310 260 310 285 Q 282 285 282 270"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M 282 240 Q 310 230 310 255 Q 282 255 282 240"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M 282 210 Q 310 200 310 225 Q 282 225 282 210"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M 282 180 Q 310 170 310 195 Q 282 195 282 180"
+                  fill="#FFFFFF"
+                />
+
+                <rect
+                  x="393"
+                  y="75"
+                  width="14"
+                  height="50"
+                  rx="5"
+                  fill="#FFFFFF"
+                />
+
+                <path
+                  d="M 390 130 
+             L 330 165 L 335 180 
+             L 390 150 
+             L 385 320 
+             L 415 320 
+             L 410 150 
+             L 465 180 L 470 165 
+             L 410 130 Z"
+                  fill="#FFFFFF"
+                />
+
+                <line
+                  x1="400"
+                  y1="160"
+                  x2="400"
+                  y2="300"
+                  stroke="#F9F8F6"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+
+                <path
+                  d="M 470 260 Q 470 320 510 320 Q 550 320 550 260 Z"
+                  fill="#FFFFFF"
+                />
+
+                <rect
+                  x="462"
+                  y="250"
+                  width="96"
+                  height="10"
+                  rx="4"
+                  fill="#FFFFFF"
+                />
+
+                <path
+                  d="M 470 270 C 450 270, 450 295, 470 295"
+                  fill="none"
+                  stroke="#FFFFFF"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M 550 270 C 570 270, 570 295, 550 295"
+                  fill="none"
+                  stroke="#FFFFFF"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                />
+
+                <path
+                  d="M 500 240 Q 485 215 510 195 T 500 150"
+                  fill="none"
+                  stroke="#FFFFFF"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M 525 235 Q 515 215 530 200 T 525 170"
+                  fill="none"
+                  stroke="#FFFFFF"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+
+                <line
+                  x1="240"
+                  y1="322"
+                  x2="570"
+                  y2="322"
+                  stroke="#FFFFFF"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+              </g>
+
+              <text
+                x="400"
+                y="350"
+                font-family="Georgia, 'Times New Roman', serif"
+                font-size="64"
+                font-weight="bold"
+                fill="#FFFFFF"
+                text-anchor="middle"
+              >
+                EL PALENTINO
+              </text>
+            </svg>
+          </div>
         <section class="hero" aria-labelledby="hero-title">
-          
           <h1 id="hero-title">Bienvenido a El Palentino</h1>
           <p class="eyebrow">Cocina tradicional con mirada actual</p>
           <p>
@@ -30,15 +190,6 @@
             >
             <a class="button-secondary" href="/links">Consultar fuentes</a>
           </p>
-          <div class="hero-logo">
-            <img
-                
-                src="~/src/assets/logo-palentino.svg"
-                alt="Logotipo de El Palentino"
-                width="420"
-                height="120"
-            >
-          </div>
         </section>
 
         <section class="quick-links" aria-labelledby="quick-links-title">
