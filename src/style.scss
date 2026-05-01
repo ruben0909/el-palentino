@@ -548,12 +548,12 @@ main {
 
 /* SVG Home animations */
 .hero-logo svg .trigo {
-  animation: slide-from-left 600ms alternate both;
+  animation: slide-from-left 600ms alternate both;  
+  animation-delay: 150ms;
 }
 
 .hero-logo svg .cristo {
   animation: slide-from-top 600ms alternate both;
-  animation-delay: 150ms;
 }
 
 .hero-logo svg .taza {
