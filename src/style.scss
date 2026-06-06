@@ -1,6 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
 @import url("npm:animate.css/animate.min.css");
 @import url("npm:@fortawesome/fontawesome-free/css/all.min.css");
+
+/* Forzamos el swap para Font Awesome Solid */
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("npm:@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2");
+}
+
+/* Forzamos el swap para Font Awesome Brands */
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("npm:@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2") format("woff2");
+}
 
 // --- Variables ---
 $bg: #1a1a1a;
