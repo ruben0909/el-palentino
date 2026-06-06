@@ -41,6 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
     (navigator.connection.effectiveType != "3g" ||
       navigator.connection.effectiveType != "2g")
   ) {
-    // sourceVideo.src = "./bg.mp4";
+    sourceVideo.src = "./bg.mp4";
   }
 });
