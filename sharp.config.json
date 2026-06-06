@@ -11,6 +11,8 @@
     "compressionLevel": 9
   },
   "avif": {
-    "quality": 80
+    "quality": 40,
+    "effort": 7,
+    "chromaSubsampling": "4:2:0"
   }
 }
