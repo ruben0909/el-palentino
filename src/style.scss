@@ -153,6 +153,7 @@ h2 {
   font-size: clamp(1.6rem, 3.5vw, 2.2rem);
   color: $text-main;
   font-weight: 500;
+  min-height: 3rem;
 }
 
 h3 {
