@@ -213,15 +213,6 @@ p {
   border-bottom: 2px solid #8c6a00;
 }
 // --- Layout Components ---
-.site-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: $bg-opaque;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
-}
 
 .site-header {
   @extend %container;
