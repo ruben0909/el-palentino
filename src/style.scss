@@ -1,9 +1,9 @@
 $fa-font-display: swap;
 @import url("npm:animate.css/animate.min.css");
-@import "npm:@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "npm:@fortawesome/fontawesome-free/scss/solid.scss";
-@import "npm:@fortawesome/fontawesome-free/scss/brands.scss";
-@import "npm:@fortawesome/fontawesome-free/scss/";
+@import url("npm:@fortawesome/fontawesome-free/css/all.min.css");
+// @import "npm:@fortawesome/fontawesome-free/scss/fontawesome.scss";
+// @import "npm:@fortawesome/fontawesome-free/scss/solid.scss";
+// @import "npm:@fortawesome/fontawesome-free/scss/brands.scss";
 
 
 /* Forzamos el swap para Font Awesome Solid */
